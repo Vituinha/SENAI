@@ -1,0 +1,206 @@
+.no-select {
+    user-select: none;
+}
+
+section.siteSection {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+}
+
+h1.siteSection-title{
+    font-weight: 100;
+    font-size: 3rem;
+    color: rgb(124, 124, 124);
+}
+
+/* Navbar */
+
+nav.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+a.nav-button {
+    margin-left: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    background-color: transparent;
+    border-color: white;
+}
+a.nav-button:hover {
+    background-color:  rgb(45,74,142);
+    border-color:  rgb(45,74,142);
+}
+
+button.navbar-toggler {
+    border: none;
+    outline: none;
+}
+button.navbar-toggler:focus {
+    border: none;
+    outline: none;
+}
+
+/* Header */
+
+section.header {
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+}
+
+img.header-logo {
+    margin-left: 5rem;
+}
+
+div.header-logo-title {
+    display: none;
+    font-size: 3rem;
+    margin: auto;
+    color: lightgray;
+}
+
+div.text-header{
+    font-size: 2.5rem;
+    color: lightgrey;
+    margin-left: 5rem;
+}
+
+a.header-button {
+    display: none;
+    margin-bottom: 13rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border-color: white;
+}
+a.header-button:focus {
+    background-color: transparent;
+}
+
+/* Introduction */
+
+section.intro {
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+h2.intro-text{
+    font-weight: 100;
+    font-size: 1.2rem;
+    color: rgb(124, 124, 124);
+    width: 80%;
+    margin: auto;
+    margin-top:.5rem;
+}
+
+    /* Bolinhas */
+
+    div.obj-item {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        word-wrap: normal;
+        width: 100%;
+        text-align: left;
+        color: rgb(124, 124, 124);
+    }
+    div.odd-item {
+        justify-content: flex-end;
+        text-align: right;
+    }
+    div.obj-dot {
+        width: 3rem;
+        height: 3rem;
+    }
+    label.obj-text {
+        font-size: 1.3rem;
+        padding: 0 1rem 0 1rem;
+        max-width: 80%;
+        margin: 0;
+    }
+
+/* Quests */
+
+section.quests {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 10.001rem;
+    margin-top: 2rem;
+}
+
+div#quests-question {
+    margin: 2rem 0 2rem 0;
+}
+
+div.card {
+    border: 1px rgb(233, 227, 227) solid;
+    margin: 1rem 0 1rem 0;
+}
+div.card-header {
+    background-color: white;
+}
+div.card-header a {
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+}
+div.card-header a:hover {
+    color: rgb(39, 39, 39);
+}
+
+/* Party */
+
+section.party {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 20rem;
+}
+
+div.party-cards {
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.party-card {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: fit-content;
+    border: rgb(228, 217, 217) 1px solid;
+    border-radius: 2rem;
+    box-shadow: rgb(224, 209, 209) 1px 1px 10px;
+    align-items: center;
+}
+
+img.party-card-img {
+    width: 60%;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
+h1.party-card-title{
+    font-size: 1.5rem;
+    margin: none;
+    margin-top: 1rem;
+    color: rgb(165, 155, 155);
+}
+
+h2.party-card-text{
+    color: rgb(207, 191, 191);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}

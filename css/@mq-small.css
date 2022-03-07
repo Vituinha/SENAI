@@ -1,0 +1,46 @@
+@media ( max-width: 800px ){
+
+/* Navbar */
+
+a.navbar-brand {
+    display: none;
+}
+
+a.nav-button {
+    position: relative;
+    left: 0;
+    margin-left: 0;
+}
+
+/* Header */
+
+section.header {
+    flex-direction: column;
+}
+
+img.header-logo {
+    margin: auto;
+    margin-bottom: 1rem;
+    height: 5rem;
+}
+
+div.header-logo-title {
+    display: flex;
+    margin-top: -1rem;
+}
+
+div.text-header {
+    display: none;
+}
+
+a.header-button {
+    display: flex;
+}
+
+/* Party */
+
+section.party {
+    display: none;
+}
+
+}
