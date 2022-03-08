@@ -2,8 +2,8 @@
 <?php 
 	include 'conexao.php'; 
 	$sql = 'INSERT INTO Empresa VALUES (?, ?, ?)';
-	$s = $_POST['senhaC'];
-	$c = $_POST['CNPJ']
+	$s = $_POST['senhaA'];
+	$c = $_POST['CPF']
 	$n = $_POST['nomeC'];
 	$e = $_POST['emailC'];
 	echo "!";

@@ -35,7 +35,7 @@
                 <label>Nome Completo</label>
                 <br>
                 <div class="input-group flex-nowrap">
-                    <input type="text" class="form-control" aria-describedby="addon-wrapping" placeholder="Digite Seu Nome" required id="nomeC" onkeypress="return ApenasLetras(event,this);">
+                    <input type="text" class="form-control" aria-describedby="addon-wrapping" placeholder="Digite Seu Nome" required id="nomeC" name="nomeC" onkeypress="return ApenasLetras(event,this);">
                 </div>
                 
                 <br>
@@ -43,7 +43,7 @@
                 <label>CPF</label>
                 <br>
                 <div class="input-group flex-nowrap">
-                    <input type="text" class="form-control" aria-describedby="addon-wrapping" placeholder="CPF" required id="CPF" maxlength="14" onkeypress="somente_numeros(); mascara_cpf();">
+                    <input type="text" class="form-control" aria-describedby="addon-wrapping" placeholder="CPF" required id="CPF" name="CPF" maxlength="14" onkeypress="somente_numeros(); mascara_cpf();">
                 </div>
 
                 <br>
@@ -65,19 +65,19 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="addon-wrapping">@</span>
                 </div>
-                <input type="email" class="form-control" id="exampleInputEmail1 emailc" aria-describedby="emailHelp" placeholder="email@exemplo.com" required>
+                <input type="email" class="form-control" id="exampleInputEmail1 emailC" name="emailC" aria-describedby="emailHelp" placeholder="email@exemplo.com" required>
                 </div>
                 <small id="emailHelp" class="form-text text-muted">Prometemos não compartilhar seu e-mail com ninguém.</small>
                 </div>
                 <div id="senhaDiferente" class="container-fluid"></div>
                 <div class="form-group">
                 <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control" name="sD" id="SenhaA">
+                <input type="password" class="form-control" name="sD" name="senhaA" id="senhaA">
                 <label class="errorMessage" id="errorMessage-password">Preencha os campos com senhas iguais.</label>
                 </div>
                 <div class="form-group">
                 <label for="exampleInputPassword1">Confirmar Senha</label>
-                <input type="password" class="form-control" name="sC" id="SenhaB">
+                <input type="password" class="form-control" name="sC" name="senhaB" id="senhaB">
                 </div>
                 <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1" name="termos" required>
@@ -130,9 +130,9 @@
         <script> 
             function findErrors ( ) {
                 // Password
-                if ( document.getElementById( 'SenhaA' ).value !== document.getElementById( 'SenhaB' ).value ) {
-                    document.getElementById( 'SenhaA' ).style.borderColor = 'red';
-                    document.getElementById( 'SenhaB' ).style.borderColor = 'red';
+                if ( document.getElementById( 'senhaA' ).value !== document.getElementById( 'senhaB' ).value ) {
+                    document.getElementById( 'senhaA' ).style.borderColor = 'red';
+                    document.getElementById( 'senhaB' ).style.borderColor = 'red';
                     document.getElementById( 'errorMessage-password' ).style.display = 'block';
                     return true;
                 }
@@ -149,9 +149,9 @@
             }
         
         function gravar(){
-            if ( document.getElementById( 'SenhaA' ).value !== document.getElementById( 'SenhaB' ).value ) {
-                document.getElementById( 'SenhaA' ).style.borderColor = 'red';
-                document.getElementById( 'SenhaB' ).style.borderColor = 'red';
+            if ( document.getElementById( 'senhaA' ).value !== document.getElementById( 'senhaB' ).value ) {
+                document.getElementById( 'senhaA' ).style.borderColor = 'red';
+                document.getElementById( 'senhaB' ).style.borderColor = 'red';
                 document.getElementById( 'errorMessage' ).style.display = 'block';
             }
             else $.ajax({
